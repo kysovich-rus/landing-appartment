@@ -24,10 +24,14 @@
   padding: 10px;
 }
 
+.info-card:hover {
+  background-color: #e3e3e3;
+  transition: all ease .5s;
+}
+
 .info-card img {
   margin: auto;
   width: 75%;
-  background-color: #ffffff;
   border-radius: 5px;
 }
 

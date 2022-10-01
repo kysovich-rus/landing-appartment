@@ -46,6 +46,11 @@
   padding: 1rem;
 }
 
+.header-link:hover {
+  background-color: #00000099;
+  transition: all ease .3s;
+}
+
 .header-link a {
   color: #ffffff;
   text-decoration: none;

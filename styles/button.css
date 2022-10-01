@@ -17,4 +17,5 @@
 
 .button:hover {
   background-color: rgba(225, 225, 225, 0.95);
+  transition: all ease .3s;
 }
