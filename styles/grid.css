@@ -1,0 +1,41 @@
+.buffer-vertical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-3 {
+  display: flex;
+  flex: 1;
+  max-width: 25%;
+}
+
+.col-9 {
+  display: flex;
+  flex: 1;
+  max-width: 75%;
+}
+
+.information {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #cc996633;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .col-3, .col-9 {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+}
