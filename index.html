@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="parallax.js-1.5.0/parallax.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,38 +18,34 @@
       </div>
       <div class="header-links-block">
         <div class="header-link">
-          <a href="#">Туда</a>
+          <a href="#about">Описание</a>
         </div>
         <div class="header-link">
-          <a href="#">Сюда</a>
-        </div>
-        <div class="header-link">
-          <a href="#">Обратно</a>
+          <a href="#contacts">Контакты</a>
         </div>
       </div>
     </div>
-
     <div class="intro" data-parallax="scroll" data-image-src="img/back.png">
       <div class="intro-content">
         <div class="intro-col">
-          <h1 class="title-lg text-lead">Просторная.</h1>
-          <h1 class="title-lg text-lead">Уютная.</h1>
-          <h1 class="title-lg text-lead">Недорогая.</h1>
-          <h1 class="title-lg text-lead">Недалеко от Москвы.</h1>
+          <h2 class="title-lg text-lead">Просторная.</h2>
+          <h2 class="title-lg text-lead">Уютная.</h2>
+          <h2 class="title-lg text-lead">Недорогая.</h2>
+          <h2 class="title-lg text-lead">Недалеко от Москвы.</h2>
         </div>
         <div class="intro-col centered">
           <img class="intro-logo" src="img/apartment.png" alt="Иконка">
-          <h1 class="title-lg">Квартира в Балашихе!</h1> 
+          <h2 class="title-lg text-lead">Квартира в Балашихе!</h2>
 
           <div class="buffer-vertical">
-            <a class="button button-white" href="#">Связаться с продавцом</a>
+            <a class="button button-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Связаться с продавцом</a>
           </div>
           <p class="text-sm text-comment">Звоните уже сегодня!</p>
         </div>
       </div>
     </div>
-
-    <div class="about">
+  
+    <div class="about" id="about">
       <div class="container">
         <div class="text-filler col-text">
           <p>
@@ -67,12 +63,12 @@
         </div>
       </div>
     </div>
+    <h2 class="title-lg centered">Почему у нас: три шага к своей квартире</h2>
     <div class="cards">
-      <h1 class="title-lg centered">Почему у нас: три шага к своей квартире</h1>
-      <div class="container">
+      <div class="row">
         <div class="info-card">
           <img src="img/certified.svg" alt="Лицензия">
-          <h1>Договор</h1>
+          <h2>Договор</h2>
           <h4>(Все официально)</h4>
           <p class="text-lg">
             Наше агентство работает уже более <span class="title-md">10</span> лет на рынке недвижимости
@@ -80,15 +76,17 @@
         </div>
         <div class="info-card">
           <img src="img/launch-svgrepo-com.svg" alt="Ракета">
-          <h1>Подождать</h1>
+          <h2>Подождать</h2>
           <h4>(Немножко)</h4>
           <p class="text-lg">
             Да-да! Все формальности мы разрешим самостоятельно!
           </p>
         </div>
+      </div>
+      <div class="row">
         <div class="info-card">
           <img src="img/direct-svgrepo-com.svg" alt="Переезд">
-          <h1>Переезд</h1>
+          <h2>Переезд</h2>
           <h4>(С нас печеньки)</h4>
           <p class="text-lg">
             Наши клиенты переезжают уже через две недели! Экономьте время, силы и деньги!
@@ -97,7 +95,7 @@
         <div class="info-card">
           <img src="img/like-svgrepo-com.svg" alt="Вы великолепны!">
           <div class="info-content">
-            <h1>Готово!</h1>
+            <h2>Готово!</h2>
             <h4>(Вы великолепны!)</h4>
             <p class="text-lg">
               Не забудьте оставить отзывы в социальных сетях!
@@ -107,29 +105,33 @@
       </div>
     </div>
 
-    <div class="information">
+    <div class="information" id="contacts">
       <div class="container">
         <div class="col-3">
           <div class="contacts">
-            <form>
-              <h1>Оставьте заявку!</h1>
-              <p>
-                <label for="email" class="text-lg">E-mail</label> 
-                <input type="text" id="email" name="email" class="form-input"></input>
-              </p>
-              <p>
-                <label for="telephone" class="text-lg">Тел.</label>
-                <input type="text" id="tel" name="tel" class="form-input"></input>
-              </p>
-              <p>
-                <input type="submit" value="Отправить" class="form-submit">
-              </p>
-            </form>
-            <h1>Свяжитесь с нами!</h1>
-            <p><strong>Тел: </strong>8(800) 555-35-35</p>
-            <p><strong>E-mail: </strong>mamontmamont@mail.ru</p>
-            <p><strong>TG: </strong>@telegram</p>
-            <p><strong>Офис: </strong> г. Москва, ул. Пушкина, дом Х </p>
+            <div class="contact">
+              <form>
+                <h2>Оставьте заявку!</h2>
+                <p>
+                  <label for="email" class="text-lg">E-mail</label>
+                  <input type="text" id="email" name="email" class="form-input">
+                </p>
+                <p>
+                  <label for="telephone" class="text-lg">Тел.</label>
+                  <input type="text" id="telephone" name="telephone" class="form-input">
+                </p>
+                <p>
+                  <input type="submit" value="Отправить" class="form-submit">
+                </p>
+              </form>
+            </div>
+            <div class="contact mt-10">
+              <h2>Свяжитесь с нами!</h2>
+              <p><strong>Тел: </strong>8(800) 555-35-35</p>
+              <p><strong>E-mail: </strong>mamontmamont@mail.ru</p>
+              <p><strong>TG: </strong>@telegram</p>
+              <p><strong>Офис: </strong> г. Москва, ул. Пушкина, дом Х </p>
+            </div>
           </div>
         </div>
         

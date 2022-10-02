@@ -28,7 +28,17 @@
   background-color: #cc996633;
 }
 
-@media (max-width: 640px) {
+.mt-10 {
+  margin-top: 10px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
   .container {
     max-width: 90%;
     flex-direction: column;
@@ -36,6 +46,11 @@
 
   .col-3, .col-9 {
     max-width: 100%;
+    margin-bottom: 10px;
     flex-direction: column-reverse;
+  }
+
+  .mt-10 {
+    margin: 0;
   }
 }

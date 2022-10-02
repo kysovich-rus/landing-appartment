@@ -37,6 +37,7 @@
 .intro .text-lead {
   color: #fff;
   text-align: left;
+  text-shadow: 1px 6px 2px #333333aa;
 }
 
 .intro .text-comment {

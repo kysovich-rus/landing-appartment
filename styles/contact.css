@@ -1,4 +1,14 @@
 .contacts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: space-between;
   background-color: #ffffff;
   border: #333333AA 2px solid;
   border-radius: 5px;
@@ -36,9 +46,28 @@
   transition: all ease .3s;
 }
 
+@media(max-width: 1200px) {
+  .contacts {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact {
+    max-width: 45%;
+  }
+}
+
 @media(max-width: 640px) {
   .contacts {
     max-width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  
+  .contact {
+    max-width: 100%;
+    margin: 0;
     margin-bottom: 10px;
   }
 }
